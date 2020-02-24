@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gallery.GalleryController">
+   <children>
+      <BorderPane layoutX="10.0" layoutY="10.0" stylesheets="" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="479.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fx:id="hshasa" layoutX="96.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add/Modify">
+                     <font>
+                        <Font name="Big Caslon Medium" size="18.0" />
+                     </font>
+                  </Text>
+                  <JFXTextField fx:id="manager" labelFloat="true" layoutX="77.0" layoutY="114.0" prefHeight="22.0" prefWidth="154.0" promptText="Manager" unFocusColor="#21302b" AnchorPane.leftAnchor="77.0" />
+                  <JFXTextField fx:id="address" focusColor="#0d3bc6" labelFloat="true" layoutX="77.0" layoutY="167.0" prefHeight="22.0" prefWidth="154.0" promptText="address" unFocusColor="#3c3a3a" AnchorPane.leftAnchor="77.0">
+                     <font>
+                        <Font name="System Italic" size="13.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="type" labelFloat="true" layoutX="355.0" layoutY="143.0" prefHeight="22.0" prefWidth="154.0" promptText="type" text="0" unFocusColor="#21302b" AnchorPane.leftAnchor="355.0">
+                     <font>
+                        <Font name="System Font" size="11.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="author" labelFloat="true" layoutX="355.0" layoutY="194.0" prefHeight="22.0" prefWidth="154.0" promptText="author" text="0" unFocusColor="#21302b" AnchorPane.leftAnchor="355.0">
+                     <font>
+                        <Font name="System Font" size="11.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="title" labelFloat="true" layoutX="355.0" layoutY="250.0" prefHeight="22.0" prefWidth="154.0" promptText="title" text="0" unFocusColor="#21302b" AnchorPane.leftAnchor="355.0">
+                     <font>
+                        <Font name="System Font" size="11.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="price" labelFloat="true" layoutX="355.0" layoutY="307.0" prefHeight="22.0" prefWidth="154.0" promptText="price" text="0" unFocusColor="#21302b" AnchorPane.leftAnchor="355.0">
+                     <font>
+                        <Font name="System Font" size="11.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label layoutX="352.0" layoutY="82.0" style="-fx-background-: white;" text="Contenue" textOverrun="WORD_ELLIPSIS" underline="true">
+                     <font>
+                        <Font name="Baghdad Regular" size="22.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="backButton" layoutX="596.0" layoutY="388.0" prefHeight="27.0" prefWidth="67.0" stylesheets="@../resources/style.css" text="Delete" />
+                  <JFXButton fx:id="validateButton" buttonType="RAISED" layoutX="441.0" layoutY="388.0" prefHeight="27.0" prefWidth="67.0" ripplerFill="#514848" stylesheets="@../resources/style.css" text="Edit">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <Button layoutX="96.0" layoutY="388.0" mnemonicParsing="false" onAction="#addGallery" prefHeight="26.0" prefWidth="215.0" text="Add" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<galleries>
+    <gallery address="TEST" id="1">
+        <manager>ELENA</manager>
+        <contents gallery_id="1" id="1">
+            <type>Test</type>
+            <author>khalid</author>
+            <title>DOM</title>
+            <price>10.0</price>
+        </contents>
+    </gallery>
+    <gallery address="TEST2" id="2">
+        <manager>dqsds</manager>
+        <contents gallery_id="2" id="2">
+            <type>Test2</type>
+            <author>khalid</author>
+            <title>DOM</title>
+            <price>25468.0</price>
+        </contents>
+        <contents gallery_id="2" id="3">
+            <type>Tiiit</type>
+            <author>khalid</author>
+            <title>sdsds</title>
+            <price>2585.0</price>
+        </contents>
+    </gallery>
+</galleries>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gallery.GalleryController">
+   <children>
+      <VBox prefHeight="500.0" prefWidth="200.0" style="-fx-background-color: DFDBDF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="106.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="200.0" stylesheets="@../../Library/resources/style.css" text="Library">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Library/images/books_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="200.0" stylesheets="@../../Library/resources/style.css" text="Gallery">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Library/images/gallery_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="171.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="200.0" stylesheets="@../../Library/resources/style.css" text="Exit">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Library/images/icons8_exit_26px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+      <Pane layoutX="199.0" layoutY="-2.0" prefHeight="500.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TableView fx:id="content_table" layoutY="230.0" prefHeight="270.0" prefWidth="800.0">
+               <columns>
+                  <TableColumn fx:id="table_content_id" prefWidth="109.333251953125" text="ID" />
+                  <TableColumn fx:id="table_title" prefWidth="223.199951171875" text="Title" />
+                  <TableColumn fx:id="table_type" prefWidth="134.39990234375" text="Type" />
+                  <TableColumn fx:id="table_author" prefWidth="184.79998779296875" text="Author" />
+                  <TableColumn fx:id="table_price" prefWidth="103.2000732421875" text="Price" />
+               </columns>
+            </TableView>
+            <Button fx:id="content_add" layoutX="23.0" layoutY="48.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="253.0" text="Add Contents" />
+            <Button fx:id="content_modify" layoutX="23.0" layoutY="118.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="253.0" text="Modify/Delete" />
+            <Pane layoutX="366.0" layoutY="34.0" prefHeight="168.0" prefWidth="356.0" style="-fx-background-color: #364FCD; -fx-background-radius: 10;">
+               <children>
+                  <Label layoutX="123.0" layoutY="14.0" text="Gallery Info" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="gallary_id" disable="true" layoutX="100.0" layoutY="55.0" prefHeight="25.0" prefWidth="215.0" promptText="Title">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="gallary_manager" disable="true" layoutX="98.0" layoutY="88.0" prefHeight="25.0" prefWidth="215.0" promptText="Manager">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label layoutX="39.0" layoutY="57.0" text="ID" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="29.0" layoutY="93.0" text="Manager" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="gallary_address" disable="true" layoutX="97.0" layoutY="125.0" prefHeight="25.0" prefWidth="215.0" promptText="address">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label layoutX="28.0" layoutY="127.0" text="Address" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

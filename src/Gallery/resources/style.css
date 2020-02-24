@@ -1,0 +1,77 @@
+#label_title{
+	-fx-text-fill: white;
+}
+#tableGrid,#grid{
+    -fx-background-color: #88e9f2;
+}
+#leftPane2,#menuLeft{
+-fx-background-color: linear-gradient(to bottom right, #6699ff,#000dff)
+
+
+}
+
+#middleAnchro,#menuPane,#panelCenter{
+-fx-background-color: linear-gradient(to bottom left, #80bfff,#e6f2ff)
+
+}
+#centerPane,#leftPane,#tableGrid{
+	-fx-border-style: dotted;
+
+}
+#validateButton, #subscribeButton,#ajouterExpBtn,#ajouterTypDpnsBtn,#insert{
+	-fx-background-color: #6699ff;
+}
+#printButton{
+	-fx-background-color: orange;
+}
+#backButton	{
+	-fx-background-color: #ff6666	;
+}
+#btn_print_preview,#signButton{
+	-fx-background-color: rgb(54,119,171);
+}
+
+.jfx-button{
+	-fx-opacity: 0.9;
+	-fx-text-fill: white;
+}
+.jfx-button:hover{
+	-fx-opacity: 0.5;
+	-fx-background-color:white;
+	-fx-text-fill: black;
+}
+#btn_position{
+	-fx-text-fill: black;
+}
+.table-view{
+   -fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+    -fx-text-fill: Black;
+
+
+}
+.table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color, #e6ffff ;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+
+.table-row-cell:selected {
+    -fx-background-color:  #b3ccff;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+.table-row-cell:hover {
+    -fx-background-color:  #e6eeff;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+
+.table-view .column-header {
+    -fx-background-color: #e6eeff;
+     -fx-background-radius: 1;
+}
